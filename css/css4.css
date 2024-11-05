@@ -1,0 +1,143 @@
+/* Estilos para el contacto */
+body {
+    display: flex;
+
+
+    margin: 0px;
+    background: linear-gradient(to right, rgb(0, 255, 191), rgba(1, 243, 102, 0.808));
+}
+
+.lista {
+    margin: 0;
+    padding: 100;
+    background-color: rgb(49, 66, 90);
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px black;
+    margin-left: 400px;
+    width: 820px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    margin-top: -100px;
+
+
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+
+}
+
+.redes {
+    list-style-type: none;
+}
+
+.lista li {
+    float: left;
+
+}
+
+li a:hover {
+
+    text-decoration-line: underline;
+
+
+}
+
+.redes .b {
+    background-color: #3496bd;
+
+}
+
+.redes .c {
+    background-color: #3496bd;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.redes .a {
+    background-color: #3496bd;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.red:hover {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+.imagen {
+    margin: 0;
+
+
+
+    overflow: hidden;
+    border-radius: 0px 0px 40px 40px;
+
+    margin-left: 150px;
+    width: 200px;
+    margin-top: -14px;
+    height: auto;
+
+
+}
+
+.set {
+    bottom: 100px;
+    text-align: center;
+    width: 300px;
+    margin-top: -595px;
+    margin-left: 1000px;
+    height: 500px;
+    box-shadow: 1px 1px 5px 5px black;
+    background-color: black;
+}
+
+legend {
+    font-size: 30px;
+    color: yellow;
+    text-shadow: 2px 2px 5px white;
+    margin-top: -20px;
+}
+
+p {
+    color: white;
+    padding: 30px;
+    font-size: 16.5px;
+}
+
+hr {
+    color: white;
+}
+
+.lll {
+    padding: 20px;
+}
+
+.lll:hover {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+.maps {
+    margin-left: 120px;
+    margin-top: 50px;
+    border: 5px solid black;
+    filter: brightness(20%);
+    /* para hacer que la imagen sea oscura*/
+    transition: all 400ms ease-in-out;
+}
+
+.maps:hover {
+    filter: brightness(100%);
+    /*para que la imagen tenga luz*/
+}
+
+h2 {
+    margin-left: 175px;
+}

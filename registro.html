@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css7.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="website icon" type="png" href="images/abajo.png" />
+    <title>Registro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body class="registro">
+    <div class="estructura">
+      <h1>¿Ya eres uno de nosotros?</h1>
+      <h2>
+        Si no quieres perderte ninguna noticia sobre nuestras actualizaciones,
+        no olvides registrarte a nuestra newsletter
+      </h2>
+      <button onclick="transitionTo('iniciosesion.html')">
+        INICIAR SESIÓN
+      </button>
+    </div>
+    <img class="login" src="images/imagen2.png" width="450" height="450" />
+    <div class="form-container">
+      <h1>Registro</h1>
+      <form id="registration-form" action="registro.php" method="post">
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder=" &#xf007; Nombre de Usuario"
+          required
+        />
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder=" &#xf0e0; Correo Electrónico"
+          required
+        />
+        <br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder=" &#xf023; Contraseña"
+          required
+        />
+        <br />
+        <h2 class="politicas">
+          <strong>Acepto las políticas de privacidad</strong
+          ><input type="checkbox" required />
+        </h2>
+        <input type="submit" name="REGISTRARME" value="REGISTRARME" />
+      </form>
+      <h2><a href="index.html">Volver al inicio</a></h2>
+      <h2>O regístrate con tus redes sociales</h2>
+      <br />
+      <a href="https://www.instagram.com/"
+        ><img class="lll" src="images/instagram.png" width="20" height="20"
+      /></a>
+      <a href="https://www.facebook.com/?locale=es_ES"
+        ><img class="lll" src="images/faceboook.png" width="20" height="20"
+      /></a>
+      <a href="https://twitter.com/"
+        ><img class="lll" src="images/twitter.png" width="20" height="20"
+      /></a>
+      <a
+        href="https://workspace.google.com/intl/es/products/gmail/?gclid=ccc5ab219e611a127246cd3a2bc032da&gclsrc=3p.ds"
+        ><img class="lll" src="images/gmail.png" width="20" height="20"
+      /></a>
+    </div>
+
+    <script>
+      // Animación cuando se carga la página de registro
+      document.addEventListener("DOMContentLoaded", () => {
+        gsap.to("body", {
+          backgroundPosition: "300% 80%",
+          duration: 1,
+          ease: "power2.out",
+          onComplete: () => {
+            gsap.to("body", { opacity: 1, duration: 0.5 }); // Mostrar el contenido lentamente
+          },
+        });
+      });
+
+      // Animación al hacer clic en "Iniciar Sesión"
+      document.querySelector("button").addEventListener("click", (e) => {
+        e.preventDefault();
+        gsap.to("body", {
+          opacity: 0, // Desvanecer el contenido actual
+          duration: 0.2,
+          onComplete: () => {
+            gsap.to("body", {
+              backgroundPosition: "-200% 80%", // Animar el fondo
+              duration: 1,
+              ease: "power2.inOut",
+              onComplete: () => {
+                window.location.href = "iniciosesion.html"; // Redirigir después de la animación
+              },
+            });
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

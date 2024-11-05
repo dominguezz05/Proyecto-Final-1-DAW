@@ -1,0 +1,166 @@
+/* Estilos para el inicio */
+body {
+    display: flex;
+
+    margin-bottom: 10px;
+    margin: 0px;
+    background: linear-gradient(to right, rgb(0, 255, 191), rgba(1, 243, 102, 0.808));
+}
+
+.imagen {
+    margin: 0;
+
+
+
+    overflow: hidden;
+    border-radius: 0px 0px 40px 40px;
+
+    margin-left: 150px;
+    width: 200px;
+    margin-top: -14px;
+    height: auto;
+
+
+}
+
+.lista {
+    margin: 0;
+    padding: 100;
+    background-color: rgb(49, 66, 90);
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px black;
+    margin-left: 400px;
+    width: 820px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    margin-top: -100px;
+
+
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+
+}
+
+.lista li {
+    float: left;
+
+}
+
+.redes {
+    list-style-type: none;
+
+}
+
+.redes .b {
+    background-color: #3496bd;
+
+}
+
+.redes .c {
+    background-color: #3496bd;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.redes .a {
+    background-color: #3496bd;
+    border-radius: 30px 0px 0px 30px;
+}
+
+li a:hover {
+
+    text-decoration-line: underline;
+
+
+}
+
+.red:hover {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 250px;
+}
+
+.boton {
+    border-radius: 10px;
+    padding: 5px 10px 5px;
+    width: 120px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 80px;
+    margin-top: -500px;
+    z-index: -3;
+}
+
+.boton:hover {
+    background-color: black;
+    color: white;
+}
+
+.bloque1 {
+
+    justify-content: center;
+    align-items: center;
+    margin-left: 280px;
+    z-index: 0;
+
+}
+
+.hijo1 {
+    background-color: rgba(20, 5, 118, 0.582);
+    width: 500px;
+    padding: 30px 30px;
+    border-radius: 20px;
+    color: white;
+    height: 50px;
+
+
+}
+
+.redes {
+    background-color: aqua;
+
+}
+
+.hijo2 {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(233, 220, 220);
+    z-index: -3;
+    margin-left: 513px;
+    margin-top: -250px;
+    border-radius: 15px;
+    transform: rotate(10deg);
+}
+
+.negro {
+    z-index: 0;
+    margin-left: 750px;
+    margin-top: -482.5px;
+
+
+}
+
+.bloque2 {
+    position: relative;
+}
+
+.bloque2.negro {
+    z-index: 400;
+}
+
+.bloque1.hijo2 {
+    margin-top: -200px;
+    z-index: 8;
+}

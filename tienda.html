@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css5.css" type="text/css">
+    <link rel="website icon" type="png" href="images/abajo.png">
+
+    <title>Tienda Tienda</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="imagen">
+            <img src="images/logo_bnoo.png">
+        </div>
+        <ul class="lista">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="sobreNosotros.html" target="_self">Sobre Nosotros</a></li>
+            <li><a href="servicios.html" target="_self">Servicios</a></li>
+            <li><a href="tienda.html" target="_self">Tienda</a></li>
+            <li><a href="contacto.html" target="_self">Contactanos</a></li>
+            <ul class="redes">
+                <li class="a"><a href="https://es-es.facebook.com/" target="_self"><img src="images/facebook.png"
+                            alt="alt" height="20" width="20" class="red"></a></li>
+                <li class="b"><a href="https://www.instagram.com/" target="_self"><img src="images/insta.png" alt="alt"
+                            height="20" width="20" class="red"></a></li>
+                <li class="c"><a href="https://twitter.com/" target="_self"><img src="images/twitter.png" alt="alt"
+                            height="20" width="20" class="red"></a></li>
+            </ul>
+            <li><a href="iniciosesion.html" target="_self">Inicio Sesion</a></li>
+            <li><img src="images/carrito.png" alt="alt" height="20" width="20" class="carrito1" id="carrito1"
+                    onclick="abrir()"></li>    
+
+        </ul>
+
+
+
+    </header>
+
+
+
+
+    <div id="infoBox" style="display: none;"></div>
+    <div id="carrito">
+        <!-- Aquí se mostrarán los productos en el carrito -->
+
+        <h2> Total:$0.00</h2>
+    </div>
+
+
+    <div class="container">
+
+        <div class="producto">
+            <img src="images/sudaderagris.webp" alt="Sudadera Indominus gris" height="200" width="200">
+            <div class="informacion">
+                <p>Sudadera Indominus gris</p>
+                <p>Sudadera con capucha Indominus Tex color gris</p>
+                <p class="precio">24<i>.99$</i> / Unidad</p>
+
+                <button onclick="añadirAlCarrito()" class="btn-carro">Añadir al carrito</button>
+
+            </div>
+        </div>
+        <div class="producto">
+            <img src="images/sudaderablanca.jpg" alt="Sudadera Indominus blanca" height="200" width="200">
+            <div class="informacion">
+                <p>Sudadera Indominus blanca</p>
+                <p>Sudadera con capucha Indominus Tex color blanca</p>
+                <p class="precio">24<i>.99$</i> / Unidad</p>
+
+                <button onclick="añadirAlCarrito1()" class="btn-carro">Añadir al carrito</button>
+
+            </div>
+        </div>
+        <div class="producto">
+            <img src="images/sudaderaverde.jpg" alt="alt" height="200" width="200">
+            <div class="informacion">
+                <p>Sudadera Indominus verde oscuro</p><br>
+                <p>Sudadera con capucha Indominus Tex color verde</p>
+                <p class="precio">50<i> .99$</i> / Unidad</p>
+
+                <button onclick="añadirAlCarrito2()" class="btn-carro">Añadir al carrito</button>
+            </div>
+
+        </div>
+        <div class="producto">
+            <img src="images/sudaderaroja.jpg" alt="alt" height="200" width="200">
+            <div class="informacion">
+                <p>Sudadera Indominus roja</p><br>
+                <p>Sudadera con capucha Indominus Tex color roja</p>
+                <p class="precio">25<i> .99$</i> / Unidad</p>
+
+                <button onclick="añadirAlCarrito3()" class="btn-carro">Añadir al carrito</button>
+            </div>
+
+        </div>
+        <div class="producto">
+            <img src="images/pantalongris.jpeg" alt="alt" height="200" width="200">
+            <div class="informacion">
+                <p>Pantalón Indominus gris</p><br>
+                <p>Pantalón Indominus Tex color gris</p>
+                <p class="precio">80<i> .99$</i> / Unidad</p>
+
+                <button onclick="añadirAlCarrito4()" class="btn-carro">Añadir al carrito</button>
+            </div>
+
+        </div>
+        <div class="producto">
+            <img src="images/pantalonnegro.jpg" alt="alt" height="200" width="200">
+            <div class="informacion">
+                <p>Pantalón Indominus negro</p><br>
+                <p>Pantalón Indominus Tex color negro</p>
+                <p class="precio">40<i> .99$</i> / Unidad</p>
+
+                <button onclick="añadirAlCarrito5()" class="btn-carro">Añadir al carrito</button>
+            </div>
+
+        </div>
+        <div class="producto">
+            <img src="images/pantalonazul.jpeg" alt="alt" height="200" width="200">
+            <div class="informacion">
+                <p>Pantalón Indominus azul</p><br>
+                <p>Pantalón Indominus Tex color azul</p>
+                <p class="precio">30<i> .99$</i> / Unidad</p>
+
+                <button onclick="añadirAlCarrito6()" class="btn-carro">Añadir al carrito</button>
+            </div>
+
+        </div>
+        <div class="producto">
+            <img src="images/pantalonblanco.jpeg" alt="alt" height="200" width="200">
+            <div class="informacion">
+                <p>Pantalón Indominus blanco</p><br>
+                <p>Pantalón Indominus Tex color blanco</p>
+                <p class="precio">70<i> .99$</i> / Unidad</p>
+
+                <button onclick="añadirAlCarrito7()" class="btn-carro">Añadir al carrito</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function abrir() { /* esta función es para que al pulsar en la imagen del carrito, se abra la caja el div y se cierre*/
+            var x = document.getElementById('carrito');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

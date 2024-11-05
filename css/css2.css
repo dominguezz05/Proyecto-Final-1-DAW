@@ -1,0 +1,146 @@
+/* Estilos para el servicio */
+body {
+    display: flex;
+
+
+    margin: 0px;
+    background: linear-gradient(to right, rgb(0, 255, 191), rgba(1, 243, 102, 0.808));
+}
+
+.lista {
+    margin: 0;
+    padding: 100;
+    background-color: rgb(49, 66, 90);
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px black;
+    margin-left: 400px;
+    width: 820px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    margin-top: -100px;
+
+
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+
+}
+
+.redes {
+    list-style-type: none;
+}
+
+.lista li {
+    float: left;
+
+}
+
+li a:hover {
+
+    text-decoration-line: underline;
+
+
+}
+
+.redes .b {
+    background-color: #3496bd;
+
+}
+
+.redes .c {
+    background-color: #3496bd;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.redes .a {
+    background-color: #3496bd;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.red:hover {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+.imagen {
+    margin: 0;
+
+
+
+    overflow: hidden;
+    border-radius: 0px 0px 40px 40px;
+
+    margin-left: 150px;
+    width: 200px;
+    margin-top: -14px;
+    height: auto;
+
+
+}
+
+fieldset {
+    border: 2px solid #0074D9;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    margin-left: 20px;
+    max-height: 500px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px 6px 7px white;
+    margin-top: 180px;
+    background: linear-gradient(to right, rgb(9, 205, 156), rgba(12, 197, 89, 0.808));
+    display: flex;
+    /* Añadido para alinear imagen y texto */
+}
+
+/* Estilos para los nombres de las empresas */
+h2 {
+    color: #0074D9;
+    font-size: 1.5rem;
+    text-shadow: 3px 1px white;
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para las imágenes */
+.company-logo {
+    margin-left: 20px;
+
+}
+
+legend {
+    font-size: 20px;
+    font-style: oblique;
+
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5.2px;
+    position: absolute;
+    bottom: 0;
+    width: 99.3%;
+    margin-left: 0.35px;
+
+}
